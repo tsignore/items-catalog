@@ -1,0 +1,90 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  border-radius: 7px;
+  padding: 8px 12px;
+  font-size: var(--font-m);
+  font-weight: 500;
+}
+
+// =============================================== variants ================================================
+
+.clear {
+  background: transparent;
+}
+
+.outlined {
+  border: 1px solid currentcolor;
+  background: transparent;
+}
+
+.filled {
+  color: white;
+}
+
+// =============================================== sizes ================================================
+
+.small {
+  padding: 4px 8px;
+  font-size: var(--font-s);
+}
+
+.medium {
+  padding: 8px 12px;
+  font-size: var(--font-m);
+}
+
+.large {
+  padding: 12px 16px;
+  font-size: var(--font-l);
+}
+
+// =============================================== colors ================================================
+
+.clear.primary {
+  color: var(--primary-color);
+}
+
+.clear.secondary {
+  color: var(--secondary-color);
+}
+
+.clear.basic {
+  background-color: transparent;
+  color: var(--text-primary-color);
+}
+
+.filled.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.filled.secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.filled.basic {
+  background-color: var(--text-primary-color);
+  color: var(--text-primary-color-inverted);
+}
+
+.outlined.primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.outlined.secondary {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+// =============================================== disabled ================================================
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
