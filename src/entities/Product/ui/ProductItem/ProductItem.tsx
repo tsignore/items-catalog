@@ -76,3 +76,5 @@ export const ProductItem: React.FC<ProductItemProps> = React.memo(
     );
   }
 );
+
+ProductItem.displayName = "ProductItem";

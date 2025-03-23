@@ -5,10 +5,10 @@ import { useProductsStore } from "@/entities/Product/model/hooks/useProductsStor
 import { Button } from "@/shared/ui/Button/Button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React, { Usable } from "react";
+import React from "react";
 
 interface ProductPageProps {
-  params: Usable<{ id: string }>;
+  params: Promise<{ id: string }>;
 }
 
 const ProductPage = ({ params }: ProductPageProps) => {
